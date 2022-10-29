@@ -1,3 +1,4 @@
+package org.prograd;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,7 +22,7 @@ public class HeroTest {
     @Test
     void toCheckTheHealthAfterGettingDamagedByGunOne(){
 
-        int expectedHealth = (fullHealth - gunOneDamage);
+        int expectedHealth = (fullHealth + gunOneDamage);
         hero.damageByGun1();
         int actualHealth = hero.getHealth();
 
